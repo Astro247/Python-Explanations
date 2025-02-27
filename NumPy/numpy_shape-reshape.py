@@ -17,10 +17,10 @@ print("\nSecond Print:\n")
 
 arr = np.array([1,2,3,4,5,6,7,8,9,10]) #Questo array ha una dimensione
 
-print(f"Re-modelled Array:\n{arr.reshape(2,5)}") #In questo caso, i keyword argument "2,5" indicano al reshape di modificare l'array "arr" in modo che abbia una prima dimensione con 2 elementi e la seconda dimensione con 5 elementi (Non è importante la quantità di dimensioni inserite, l'importante è che il prodotto fra tutte le dimensioni inserite sia uguale alla lunghezza dell'array di partenza)
+print(f"Re-modelled Array:\n{arr.reshape(2,5)}") #In questo caso, i positional arguments "2,5" indicano al reshape di modificare l'array "arr" in modo che abbia una prima dimensione con 2 elementi e la seconda dimensione con 5 elementi (Non è importante la quantità di dimensioni inserite, l'importante è che il prodotto fra tutte le dimensioni inserite sia uguale alla lunghezza dell'array di partenza)
 
 #Nel caso in cui fosse sconosciuta parte della lunghezza dell'array di partenza, è possibile utilizzare un "-1" come keyword argument del metodo .reshape per permettere a numpy di calcolare autonomamente il numero corretto da inserire.
-#Utilizzare "-1" come keyword argument però ha dei limiti: Non è possibile utilizzare più -1 per più dimensioni (numpy si limita a calcolare il numero corretto da inserire, non in quale posizione)
+#Utilizzare "-1" come positional argument però ha dei limiti: Non è possibile utilizzare più -1 per più dimensioni (numpy si limita a calcolare il numero corretto da inserire, non in quale posizione)
 
 print("\nThird Print:\n")
 
