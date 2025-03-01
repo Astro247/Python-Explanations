@@ -10,8 +10,10 @@ arr  = np.array(["a","b","c","d","e","f","g"])
 
 print(f"(list) = Letters From 'b' to 'f': {list[1:6]}")
 print(f"(array) = Letters From 'b' to 'f': {arr[1:6]}\n") #In quanto array, nel print non vengono posizionate le virgole
-print(f"(list) = Letters From startt to end: {list[:]}")
-print(f"(array) = Letters From startt to end: {arr[:]}\n") #Inserire solo ":" è una shortcut per definire il range "inizio:fine"
+
+print(f"(list) = Letters From start to end: {list[:]}")
+print(f"(array) = Letters From start to end: {arr[:]}\n") #Inserire solo ":" è una shortcut per definire il range "inizio:fine"
+
 print(f"(list) = Letters From 'b' to 'f' with backward index: {list[-6:-1]}")
 print(f"(array) = Letters From 'b' to 'f' with backward index: {arr[-6:-1]}\n") #Anche se gli indici sono negativi, ciò non significa che l'ordine di contaggio degli indici si inverta a sua volta, vengono comunque contati da sinistra verso destra.
 
