@@ -28,3 +28,8 @@ class_dataframe = pd.DataFrame(class_dict, index=["Num1", "Num2", "Num3", "Num4"
 print(f"Whole list:\n{class_dataframe}\n")
 
 print(f"Kyle and Jane's Info:\n{class_dataframe.loc[["Num1","Num5"]]}")
+
+#Il motivo per cui è necessario utilizzare il metodo .loc[] piuttosto che selezionare direttamente l'indice fra parentesi quadre come si farebbe per una lista, in questo modo: 'class_dataframe[0]' è molto semplice:
+#Utilizzando il metodo .loc[], come positional argument vengono ricercare le righe del dataframe, che di default sono indicizzate con dei numeri da 0 a n-1.
+#Non utilizzare il metodo .loc[] significa assegnare come positional argument fra le parentesi quadre, class_dataframe[], il nome della colonna, che non è di default indicizzata a qualcosa.
+#Pertanto, se python non dovesse trovare una colonna con il nome scritto come positional argument, ritorna un keyerror.
