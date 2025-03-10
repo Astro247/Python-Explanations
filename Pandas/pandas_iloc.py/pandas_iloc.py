@@ -1,4 +1,4 @@
-#Il metodo .loc[], localization, e il metodo .iloc[], index localization, hanno esattamente la stessa funzione, con la differenza che: 
+#Il metodo .loc[], localization, e il metodo .iloc[], index localization, hanno esattamente la stessa funzione, con la differenza che:  
 #Il metodo .loc[] prende come positional arguments delle stringhe come coppia coordinate (riga e colonnna), mentre .iloc[], indipendentemente dal nome delle righe e colonne, i numeri associati ad una riga e colonna specifica.
 
 #Il metodo .loc[], ossia localizalition, stampa una specifica frazione di un dataframe.
