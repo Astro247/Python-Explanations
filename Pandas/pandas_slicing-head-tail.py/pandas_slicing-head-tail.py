@@ -9,7 +9,7 @@ df = pd.read_excel("dati_vendite.xlsx")
 
 print(df[2:4]) #Prende dalla riga 2 alla riga 3
 
-#Il primo metodo per leggere specifici dati in un dataframe è utilizzare la funzione .head, che prende come positional argument un numero che corrisponde agli elementi da leggere partendo dal primo e muovendosi verso il basso.
+#Il primo metodo per leggere specifici dati in un dataframe è utilizzare il metodo .head, che prende come positional argument un numero che corrisponde alle righe da leggere partendo dalla prima e muovendosi verso il basso.
 
 print("\nSecond Print:\n")
 
@@ -17,7 +17,7 @@ df = pd.read_excel("dati_vendite.xlsx")
 
 print(df.head(3)) #Prende le prime tre righe
 
-#In maniera analoga il metodo .tail ha lo stesso funzionamento del metodo .head con la differenza che il positional argument passatogli è un numero che corrisponde agli elementi da leggere partendo dall'ultimo e muovendosi verso l'alto.
+#In maniera analoga il metodo .tail ha lo stesso funzionamento del metodo .head con la differenza che il positional argument passatogli è un numero che corrisponde alle righe da leggere partendo dall'ultima e muovendosi verso l'alto.
 
 print("\nThird Print:\n")
 
