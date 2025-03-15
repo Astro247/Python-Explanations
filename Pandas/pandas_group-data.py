@@ -44,6 +44,6 @@ print(group) #L'output prevede un dataframe con la colonna 'Type', con i singoli
 
 print("\Fifth Print:\n")
 
-group = df.groupby(['Type']).mean(numeric_only=True)[['Age', 'Force']].sort_values(by='Force') 
+group = df.groupby(['Type']).mean(numeric_only=True)[['Age', 'Force']].sort_values(by='Force')
 
 print(group) #Gli elementi della colonna 'Force' vengono sortati dal più piccolo al più grande, modificabile con il keyword argument 'ascending'
