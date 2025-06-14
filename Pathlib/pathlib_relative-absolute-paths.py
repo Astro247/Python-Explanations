@@ -14,3 +14,6 @@ else: print("First Test: False")
 
 if path1.absolute() == path2.absolute(): print("Second Test: True") # Il metodo .absolute() trasforma qualsiasi path in una path assoluta.
 else: print("Second Test: False")
+
+if path1.samefile(path2): print("Third Test: True") # Il metodo .samefile(), applicato ad una path, verifica che una seconda path, passatagli come positional argument, punti allo stesso file/directory, indipendentemente dal fatto che una o entrambe le path siano relative.
+else: print("Third Test: False")
