@@ -23,9 +23,12 @@ p = Path("test2.txt") # Genera un'oggetto che rappresenta la path che porta al f
 p.touch() # Crea il file nella path indicata, se già esiste allora lo sovrascrive. (opzionale)
 p.write_text("hello world") # Scrive all'interno del file.
 
-"""
-Il metodo .stat() ti permette di vedere le statistiche di un file data una certa Path.
-"""
+# Per verificare che un file esista è sufficiente utilizzare il metodo ".exists" che ritorna un bool
+
+p.exists()
+
+# Il metodo .stat() ti permette di vedere le statistiche di un file data una certa Path.
+
 
 from datetime import datetime
 
