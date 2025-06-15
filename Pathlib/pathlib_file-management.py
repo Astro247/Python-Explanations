@@ -39,4 +39,4 @@ print(datetime.fromtimestamp(last_access)) # Con la libreria 'datetime' è possi
 print(datetime.fromtimestamp(last_mod))
 
 mb_dim = (size)/(10**(6)) # Conversione da bytes a megabytes
-mb_dim = (size)/(10**(9)) # Conversione da bytes a gigabytes
+gb_dim = (size)/(10**(9)) # Conversione da bytes a gigabytes
