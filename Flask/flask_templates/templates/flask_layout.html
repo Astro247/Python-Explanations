@@ -1,0 +1,33 @@
+<!--
+  Per evitare di ripetere lo stesso layout in ogni pagina HTML,
+  si può creare un file HTML separato che contiene le parti comuni del sito
+  (come <head>, barra di navigazione, footer, ecc.).
+
+  Questo file diventa il "parent" (template genitore),
+  mentre le altre pagine che lo utilizzano diventano "child" (template figli),
+  poiché ereditano la struttura e il contenuto dal layout genitore.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title == 'About' %}
+    <!-- Se la variabile passata con flask "title" è uguale alla stringa 'About' allora esegui uno specifico codice css e modifica il title della pagina. -->
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="static/flask_about.css">
+    {% else %}
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="static/flask_home.css">
+    {% endif %}
+</head>
+
+<body>
+    {% block content %}{% endblock content %}
+    <!-- Questa è la parte di codice diversa per ogni pagina HTML, mentre il resto verrà copiato da questo layout. -->
+</body>
+
+</html>

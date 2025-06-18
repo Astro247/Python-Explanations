@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(110, 110, 110);
+}
+
+h1 {
+    color: rgb(126, 0, 0);
+    text-shadow: 3px 3px 3px rgb(66, 0, 0);
+}
+
+p {
+    color: rgb(141, 139, 0);
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px rgb(77, 78, 0);
+}

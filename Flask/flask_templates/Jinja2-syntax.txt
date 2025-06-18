@@ -1,0 +1,11 @@
+Jinja è utile per poter scrivere codice HTML dinamico utilizzando flask.
+
+La sintassi è molto semplice:
+- Quando si vuole scrivere una struttura di controllo (codice che contiene una condizione, come: if, for, while ecc..) allora la sintassi è la seguente:
+    
+    {% for i in iterable %} (Fra parentesi graffe e percentuali si inserisce il codice.)
+    {% endfor %} (Si specifica cosa finisce e in che punto.)
+
+- Se invece si vuole richiamare il valore di una variabile importata da flask:
+
+    <h1>This is my name: {{ name }}</h1> (La variabile si inserisce fra doppie parentesi graffe)

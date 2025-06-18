@@ -1,0 +1,17 @@
+{% extends "flask_layout.html" %}
+<!-- La parola chiave "extends", proprio come per le classi, prende il layout del file "flask_layout" -->
+{% block content %} <!-- Viene modificato solo il "block" chiamato "content" -->
+<h1>This is the home page!</h1>
+<p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aenean commodo ligula eget dolor. Aenean massa.
+    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+    Nulla consequat massa quis enim.
+</p>
+{% for post in posts %} <!-- Per ogni post dell'iterabile "posts", richiamato da flask_dict (una lista di oggetti) -->
+<h2>TITLE: {{ post.title }}</h2>
+<h3>By {{ post.author }} on {{ post.date }}</h3>
+<p>{{ post.content }}</p>
+{% endfor %}
+{% endblock content %}
